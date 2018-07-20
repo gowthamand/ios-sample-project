@@ -30,7 +30,7 @@ public var screenHeight: CGFloat {
     return UIScreen.main.bounds.height
 }
 public var baseURL: String {
-    return "https://healthaadhar.com/webservice/public/"
+    return "https://stagewebservice.healthaadhar.com/"
 }
 public var token: String{ return UserDefaults.standard.string(forKey: "token") ?? "" }
 

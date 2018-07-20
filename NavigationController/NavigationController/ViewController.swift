@@ -56,7 +56,7 @@ class ViewController: UIViewController, UITextViewDelegate {
             "mobile_number" : mobile_number,
             "password" : password,
             ]
-        let urlString = "https://healthaadhar.com/webservice/public/authenticate"
+        let urlString = baseURL+"/authenticate"
         Alamofire.request(urlString, method: .post, parameters: params ,encoding: JSONEncoding.default, headers: nil).responseJSON {
             response in
             
